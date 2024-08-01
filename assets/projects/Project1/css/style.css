@@ -1,0 +1,189 @@
+body {
+    background: rgb(48, 45, 45) !important;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Student-Grade {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    margin: auto;
+}
+
+.text {
+    width: 30%;
+    height: 100px;
+    margin: 15px 20px;
+    background: rgb(48, 45, 45);
+    border-left: 7px solid #00b3ff;
+    float: left;
+    font-family: 'Righteous', cursive;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+h1 {
+    color: #111;
+    font-size: 40px !important;
+    padding-left: 5px;
+}
+
+h2 {
+    color: #111;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+h1 span {
+    display: table-cell;
+    animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+h2 span {
+    display: table-cell;
+    animation: animate 2s linear infinite;
+}
+
+h2 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+h2 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+h2 span:nth-child(3) {
+    animation-delay: 0.75s;
+}
+
+h2 span:nth-child(4) {
+    animation-delay: 1s;
+}
+
+h2 span:nth-child(5) {
+    animation-delay: 1.25s;
+}
+
+h2 span:nth-child(6) {
+    animation-delay: 1.75s;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff,
+            0 0 200px #00b3ff,
+            0 0 300px #00b3ff,
+            0 0 400px #00b3ff;
+    }
+
+    5%,
+    95% {
+        color: #111;
+        filter: blur(0px);
+        text-shadow: 0 0 10px #00b3ff;
+    }
+}
+
+.getMessage {
+    width: 240px;
+    height: 80px;
+    color: #111;
+    background-color: #a7af7c;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+    float: right;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.content-form {
+    width: 100%;
+    height: 300px;
+    background-color: #2f363e;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.form-control {
+    border: none !important;
+    outline: none !important;
+    background: #ff2c74 !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form-control:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.form-control::placeholder {
+    color: #fff !important;
+}
+
+.btncalculate {
+    background: #1f83f2 !important;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+    color: #fff !important;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 20px !important;
+}
+
+.btncalculate:hover {
+    filter: brightness(1.1);
+}
